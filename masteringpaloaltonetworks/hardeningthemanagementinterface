@@ -1,0 +1,8 @@
+It is paramount that the management interface is kept secure and access is limited to only those administrators that need access.
+It is recommended to place the physical management interface in an Out-of-Band network, which limits exposure to the broader network.
+
+Device | Setup | Interfaces and clicking management interface:
+here you can edit the local access list.
+
+Device | Password profiles to require password changes on profiles.
+

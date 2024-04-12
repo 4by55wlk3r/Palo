@@ -1,0 +1,18 @@
+Maturity can be estimated by looking at the maintenance release version.
+All PAN-OS versions are made up of three numbers
+PAN-OS X.Y.Z for example 9.0.5
+
+X is the major software release
+Y is the number of the feature version release
+Z is the number of the maintenance release
+
+To upgrade in the GUI you can go to Device | Software
+
+You usually get an error but then you can run check now and the repo should load.
+
+You would run an install and then run the download.
+
+In an HA pair for firewall or panorama you need to disable preemption in the high availability configuration before you start, and re-enable it after the upgrade is completed on both members.
+
+preemption if enabled makes it to where if the main panorama goes down and the second panorama takes over, once the main one comes back up it takes over as the main. Without preemption then the secondary becomes the main in that scenario of the main going down and the secondary stays as the main even though the original main is back up.
+
