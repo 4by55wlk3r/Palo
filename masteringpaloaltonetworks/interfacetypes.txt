@@ -1,0 +1,15 @@
+Open Network | Interfaces menu, you will see an assortment of physical interfaces.
+
+Virtual Wire (VWire)
+Layer 3
+Layer 2
+Tap
+
+VWire - Just as the name suggests, VWire is intended to be a "bump in the wire" VWire always consists of two physial interface- no more and no less. There is no low-level interference with VLAN tags and there are no routing options; packets are inspected in flow.
+
+Using a VWire interface can be an easy way to "drop in a firewall" without needing to interfere with an existing routing or switching environment. It easily plugs in front of an ISP router or can be placed in between a honeypot and the network to add a layer of detection.
+
+Before you can create a VWire interface, you first need to set two interfaces to the Virtual Wire type and assign each of them a different zone.
+
+Layer 3 interface- Is a routed interface, this means it has an IP address and can be used as a default gateway for clients on the inside connected to it or a next hop for a routing device. On the outside it can communicate with ISP routers and forward traffic out to the internet.
+
